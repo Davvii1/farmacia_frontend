@@ -18,7 +18,7 @@ function Register() {
 
   const submitRegister = async (e) => {
     e.preventDefault();
-    const r = await axios.post("http://localhost:4000/register", {
+    const r = await axios.post("https://farmacia-backend.vercel.app/register", {
       email: email,
       password: password,
       name: name,

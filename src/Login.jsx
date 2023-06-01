@@ -16,7 +16,7 @@ function Login() {
 
   const submitLogin = async (e) => {
     e.preventDefault();
-    const r = await axios.post("http://localhost:4000/login", {
+    const r = await axios.post("https://farmacia-backend.vercel.app/login", {
       email: email,
       password: password,
     });

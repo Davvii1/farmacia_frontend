@@ -13,7 +13,7 @@ function Appointments() {
   useEffect(() => {
     user == null ? navigate("/") : null;
     async function getAppointments() {
-      const r = await axios.get("http://localhost:4000/appointments");
+      const r = await axios.get("https://farmacia-backend.vercel.app/appointments");
       setAppointments(r.data.appointments);
     }
     getAppointments();
